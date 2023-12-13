@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+
+const styles = {
+  header:{
+    color: 'black',
+    boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.153)',
+    width: '100vw',
+    height: '10vh',
+    textAlign: 'center',
+  },
+  para:{
+    paddingTop: '15px',
+    fontFamily: 'sans-serif',
+    fontSize: '2rem'
+  }
+}
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div style={styles.header}>
+      <p style={styles.para}>      hello Kalvium ,
+      IAM HARIPRASATH the billionaire</p>
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
